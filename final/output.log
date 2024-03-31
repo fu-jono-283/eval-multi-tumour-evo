@@ -1,0 +1,855 @@
+nohup: ignoring input
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+SUCCESS: Generated matrix satisfies LHS properties
+   _____ _           ____  __             ___  ____ 
+  / ___/(_)___ ___  / __ \/ /_  __  __   <  / / __ \
+  \__ \/ / __ `__ \/ /_/ / __ \/ / / /   / / / / / /
+ ___/ / / / / / / / ____/ / / / /_/ /   / /_/ /_/ / 
+/____/_/_/ /_/ /_/_/   /_/ /_/\__, /   /_/(_)____/  
+                             /____/                 
+
+---------------------------------------------------
+
+
+Getting settings from command line...Done 
+
+Global settings:
+--------------------
+
+Trees:
+	-Species trees: 1 Birth-death simulations
+		-Speciation rate: Fixed 9.404550e-05,
+		-Extinction rate: Fixed 0.000000e+00,
+		-Outgroup addition: No addition
+		-Stopping rules:
+			-Number of leaves: Fixed 11,
+			-Generations: Not used
+	-Locus trees: Fixed 8, directly obtained from each species tree (no birth-death process)
+
+	-Gene trees: 1 multilocus coalescent simulations
+
+Parameters:
+	-Haploid efective population size: Fixed 28766,
+	-Generation time: Fixed 1.000000e+00,
+	-Global substitution rate: Fixed 7.935500e-06,
+	-Substitution rate heterogeneities
+		-Lineage (species) specific rate heterogeneity gamma shape: No heterogeneity
+		-Gene family (locus tree) specific rate heterogeneity gamma shape: No heterogeneity
+		-Gene tree branch specific rate heterogeneity gamma shape: Genome-wide parameter (hyperhyperparameter) No heterogeneity, locus-tree related parameter No heterogeneity, Gamma parameter(gene-tree related) No heterogeneity
+	-Individuals per species: Fixed 8,
+
+Misc parameters:
+	-Rooting method epsilon: 0.000001
+	-Seed: 17110064890000
+
+I/O options:
+	-Output files prefix: data/1_simphy/_pop28766_sites54034
+	-Verbosity: 1
+	-Stats file: OFF
+	-Mapping: ON
+	-Database: OFF
+	-Parameterization: ON 
+	-Command-line arguments: ON
+	-Bounded locus subtrees: OFF
+	-Output trees with internal node labels: OFF
+
+
+Simulation:
+-----------
+Replicate 1 of 1: Simulating 8 gene trees from 8 locus trees... Done
+   _____ _           ____  __             ___  ____ 
+  / ___/(_)___ ___  / __ \/ /_  __  __   <  / / __ \
+  \__ \/ / __ `__ \/ /_/ / __ \/ / / /   / / / / / /
+ ___/ / / / / / / / ____/ / / / /_/ /   / /_/ /_/ / 
+/____/_/_/ /_/ /_/_/   /_/ /_/\__, /   /_/(_)____/  
+                             /____/                 
+
+---------------------------------------------------
+
+
+Getting settings from command line...Done 
+
+Global settings:
+--------------------
+
+Trees:
+	-Species trees: 1 Birth-death simulations
+		-Speciation rate: Fixed 9.714700e-06,
+		-Extinction rate: Fixed 0.000000e+00,
+		-Outgroup addition: No addition
+		-Stopping rules:
+			-Number of leaves: Fixed 9,
+			-Generations: Not used
+	-Locus trees: Fixed 8, directly obtained from each species tree (no birth-death process)
+
+	-Gene trees: 1 multilocus coalescent simulations
+
+Parameters:
+	-Haploid efective population size: Fixed 73669,
+	-Generation time: Fixed 1.000000e+00,
+	-Global substitution rate: Fixed 3.397900e-06,
+	-Substitution rate heterogeneities
+		-Lineage (species) specific rate heterogeneity gamma shape: No heterogeneity
+		-Gene family (locus tree) specific rate heterogeneity gamma shape: No heterogeneity
+		-Gene tree branch specific rate heterogeneity gamma shape: Genome-wide parameter (hyperhyperparameter) No heterogeneity, locus-tree related parameter No heterogeneity, Gamma parameter(gene-tree related) No heterogeneity
+	-Individuals per species: Fixed 4,
+
+Misc parameters:
+	-Rooting method epsilon: 0.000001
+	-Seed: 0
+
+I/O options:
+	-Output files prefix: data/1_simphy/_pop73669_sites60413
+	-Verbosity: 1
+	-Stats file: OFF
+	-Mapping: ON
+	-Database: OFF
+	-Parameterization: ON 
+	-Command-line arguments: ON
+	-Bounded locus subtrees: OFF
+	-Output trees with internal node labels: OFF
+
+
+Simulation:
+-----------
+Replicate 1 of 1: Simulating 8 gene trees from 8 locus trees... Done
+Updated dataframes/part1_template/combined_data.csv 
+[1] "Total runtime: 0.275469541549683"
+[1] "JOBID         USER     ACCOUNT   NAME        CPUS MIN_MEM PARTITI START_TIME     TIME_LEFT STATE    NODELIST(REASON)    "
+[2] "44754232_[1-1 jfu283   uoa03626  cellcoal_arr   2    150G milan   N/A              1:00:00 PENDING  (None)              "
+ [1] "JOBID         USER     ACCOUNT   NAME        CPUS MIN_MEM PARTITI START_TIME     TIME_LEFT STATE    NODELIST(REASON)    "
+ [2] "44754232_1    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc009              "
+ [3] "44754232_2    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc012              "
+ [4] "44754232_3    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc012              "
+ [5] "44754232_4    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc016              "
+ [6] "44754232_5    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc017              "
+ [7] "44754232_6    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc019              "
+ [8] "44754232_7    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc020              "
+ [9] "44754232_8    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc025              "
+[10] "44754232_9    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc027              "
+[11] "44754232_10   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc029              "
+[12] "44754232_11   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc029              "
+[13] "44754232_12   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc035              "
+[14] "44754232_13   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc035              "
+[15] "44754232_14   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc036              "
+[16] "44754232_15   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc037              "
+[17] "44754232_16   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       59:01 RUNNING  wmc040              "
+[1] "JOBID         USER     ACCOUNT   NAME        CPUS MIN_MEM PARTITI START_TIME     TIME_LEFT STATE    NODELIST(REASON)    "
+[2] "44754232_1    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc009              "
+[3] "44754232_3    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc012              "
+[4] "44754232_5    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc017              "
+[5] "44754232_7    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc020              "
+[6] "44754232_9    jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc027              "
+[7] "44754232_11   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc029              "
+[8] "44754232_13   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc035              "
+[9] "44754232_15   jfu283   uoa03626  cellcoal_arr   2    150G milan   2024-03-21T2       58:01 RUNNING  wmc037              "
+[1] "JOBID         USER     ACCOUNT   NAME        CPUS MIN_MEM PARTITI START_TIME     TIME_LEFT STATE    NODELIST(REASON)    "
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r1/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r2/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r3/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r4/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r5/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r6/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r7/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop28766_sites54034r8/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r1/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r2/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r3/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r4/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r5/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r6/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r7/combined_data.csv 
+Copied dataframes/part1_template/combined_data.csv to data/2_ccoal/_pop73669_sites60413r8/combined_data.csv 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Contents of the directory: full_hap.0001 full_hap.0001_consensus.fasta 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Submitted batch job 44754268
+Submitted batch job 44754269
+Submitted batch job 44754270
+Submitted batch job 44754271
+Submitted batch job 44754272
+Submitted batch job 44754273
+Submitted batch job 44754274
+Submitted batch job 44754275
+Submitted batch job 44754276
+Submitted batch job 44754277
+Submitted batch job 44754278
+Submitted batch job 44754279
+Submitted batch job 44754280
+Submitted batch job 44754281
+Submitted batch job 44754282
+Submitted batch job 44754283
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r1/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r3/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r1/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r3/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r5/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r1/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r3/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r5/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r7/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r1/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r3/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r5/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r7/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r1/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r3/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r5/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r7/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+Executing script: scripts/3_cellphy_scripts/hap_consensus/pre_cellphy_hapcon_cpu.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains hapcon.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains hapcon.raxml files
+List of best tree files: data/2_ccoal/_pop28766_sites54034r1/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r2/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r3/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r4/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r5/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r6/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r7/hapcon.raxml.bestTree data/2_ccoal/_pop28766_sites54034r8/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r1/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r2/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r3/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r4/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r5/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r6/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r7/hapcon.raxml.bestTree data/2_ccoal/_pop73669_sites60413r8/hapcon.raxml.bestTree 
+All trees have been produced. Exiting the loop.
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Submitted batch job 44755770
+Submitted batch job 44755771
+Submitted batch job 44755772
+Submitted batch job 44755773
+Submitted batch job 44755774
+Submitted batch job 44755775
+Submitted batch job 44755776
+Submitted batch job 44755777
+Submitted batch job 44755778
+Submitted batch job 44755779
+Submitted batch job 44755784
+Submitted batch job 44755785
+Submitted batch job 44755786
+Submitted batch job 44755787
+Submitted batch job 44755788
+Submitted batch job 44755789
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  
+Executing script: scripts/3_cellphy_scripts/vcf_consensus/pre_vcf_consensus.R 
+Skipping iteration: _pop28766_sites54034r1  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r2  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r3  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r4  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r5  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r6  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r7  - folder contains vcf.raxml files
+Skipping iteration: _pop28766_sites54034r8  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r1  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r2  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r3  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r4  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r5  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r6  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r7  - folder contains vcf.raxml files
+Skipping iteration: _pop73669_sites60413r8  - folder contains vcf.raxml files
+List of best tree files:  

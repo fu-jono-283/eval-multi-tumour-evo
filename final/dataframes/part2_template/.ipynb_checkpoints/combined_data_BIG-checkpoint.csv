@@ -1,0 +1,2 @@
+"no_of_taxa","individuals_per_taxa","effective_population_size","species_birth_rate","tree_wide_sub_rate","no_of_sites","exponential_growth_rate","ado","amplification_error","sequencing_errors","allcount_score","ASTRAL_score","concat_hap_score","FastRFS_hap_score","concat_vcf_score","FastRFS_vcf_score"
+7,6,33710,2.48309101803228e-05,4.91095856895205e-06,51005,0.000939596764799207,0.0526017346419394,0.0570832744492218,0.0492807915899903,-1,-1,-1,-1,-1,-1

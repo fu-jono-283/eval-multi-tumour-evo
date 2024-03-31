@@ -1,0 +1,166 @@
+
+The following have been reloaded with a version change:
+  1) GCC/11.3.0 => GCC/12.3.0                                        14) bzip2/1.0.8-GCCcore-11.3.0 => bzip2/1.0.8-GCCcore-12.3.0
+  2) GCCcore/11.3.0 => GCCcore/12.3.0                                15) cURL/7.83.1-GCCcore-11.3.0 => cURL/8.3.0-GCCcore-12.3.0
+  3) HDF5/1.12.2-gimpi-2022a => HDF5/1.14.3-gompi-2023a              16) freetype/2.11.1-GCCcore-11.3.0 => freetype/2.13.2-GCCcore-12.3.0
+  4) OpenSSL/1.1.1k-GCCcore-11.3.0 => OpenSSL/1.1                    17) libjpeg-turbo/2.1.3-GCCcore-11.3.0 => libjpeg-turbo/2.1.5.1-GCCcore-12.3.0
+  5) Python/3.10.5-gimkl-2022a => Python/3.11.6-foss-2023a           18) libpng/1.6.37-GCCcore-11.3.0 => libpng/1.6.40-GCCcore-12.3.0
+  6) SQLite/3.36.0-GCCcore-11.3.0 => SQLite/3.42.0-GCCcore-12.3.0    19) libreadline/8.1-GCCcore-11.3.0 => libreadline/8.2-GCCcore-12.3.0
+  7) Szip/2.1.1-GCCcore-11.3.0 => Szip/2.1.1-GCCcore-12.3.0          20) libxml2/2.9.10-GCCcore-11.3.0 => libxml2/2.11.4-GCCcore-12.3.0
+  8) Tcl/8.6.10-GCCcore-11.3.0 => Tcl/8.6.10-GCCcore-12.3.0          21) libxslt/1.1.34-GCCcore-11.3.0 => libxslt/1.1.38-GCCcore-12.3.0
+  9) Tk/8.6.10-GCCcore-11.3.0 => Tk/8.6.10-GCCcore-12.3.0            22) ncurses/6.2-GCCcore-11.3.0 => ncurses/6.4-GCCcore-12.3.0
+ 10) UCX/1.12.1-GCC-11.3.0 => UCX/1.14.1-GCCcore-12.3.0              23) netCDF/4.8.1-gimpi-2022a => netCDF/4.9.2-gompi-2023a
+ 11) XZ/5.2.5-GCCcore-11.3.0 => XZ/5.4.2-GCCcore-12.3.0              24) numactl/2.0.14-GCC-11.3.0 => numactl/2.0.16-GCCcore-12.3.0
+ 12) ZeroMQ/4.3.4-GCCcore-11.3.0 => ZeroMQ/4.3.5-GCCcore-12.3.0      25) zlib/1.2.11-GCCcore-11.3.0 => zlib/1.2.13-GCCcore-12.3.0
+ 13) binutils/2.38-GCCcore-11.3.0 => binutils/2.40-GCCcore-12.3.0
+
+______________________________________________________________________
+
+Cell coalescent simulation - CellCoal  version 1.3.1
+(c) 2016-2022 David Posada - dposada@uvigo.es
+______________________________________________________________________
+
+Wed Dec 13 22:11:30 2023
+Parameter file ["/home/jfu283/rstudio_tmp/Rtmp2zpz1A/file382faf5e4930b3.txt"] arguments (some might not affect) =  -n1 -s50 -l95493 -e65096 -g7.3e-04 -K1.0e+00 -L0.0e+00 -h0 -k1.0e-02 -q1.0e-02 -i1.0000 -b1 -c0.0e+00 -u2.2e-06 -d0.0e+00 -H0.0e+00 -j0 -S0 -m2 -p1.0000 -w1.0000 -f0.25 0.25 0.25 0.25 -t0.5000 -a1.0000 -r0.00 1.00 1.00 1.00  1.00 0.00 1.00 1.00 1.00 1.00 0.00 1.00 1.00 1.00 1.00 0.00 -D1.3e-01 -P0.0e+00 1.0e-06 -Q0.0e+00 1.0e-06 -I5.0e-01 1.0e-06 -A7.8e-02 1.0e-07 0 -B0.0e+00 1.0e-06 -G0.0e+00 1.0e-06 -C100.00 -V5.0000 -R5.0e-01 -E2.9e-02 -X0.00 1.00 1.00 1.00 1.00 0.00 1.00 1.00 1.00 1.00 0.00 1.00 1.00 1.00 1.00 0.00 -1 -2 -3 -4 -5 -6 -8 -Y -v -x -odata/2_ccoal/_pop65096_sites95493r1 -TNA -y1 -#1702458690
+ERROR: Can't open user treefile "NA"
+______________________________________________________________________
+
+Cell coalescent simulation - CellCoal  version 1.3.1
+(c) 2016-2022 David Posada - dposada@uvigo.es
+______________________________________________________________________
+
+
+CellCoal generates a coalescent tree and simulates a sample of diploid genomes from somatic cells (no recombination), together with a (healthy) cell as outgroup.
+
+Usage: cellcoal [-FTXT -n# -s# -l# -e# -g# -h# (# # #) -k# -q# -i# -b# -c# -u# -d# -H# -j# -S# (# #) -m# -p# -w# -f# # # # -t# -a# -r# # # # # # # # # # # # # # # # -G# -C# -V# -I# -D# -P# -Q# -R# -A# # # -E# -B# -X# # # # # # # # # # # # # # # # -1 -2 -3 -4 -5 -6 -7 -8 -9 -Y -v -x -oTXT -TTXT -UTXT -W# -y# -## -?]
+
+-F: user-defined parameter file (e.g. -Fmyparameters)
+-n: number of replicates (e.g. -n1000)
+-s: sample size (# cells) (e.g. -s8)
+-l: number of sites (e.g. -l500)
+-e: effective population size (e.g. -e1000)
+-g: exponential growth rate (e.g. -g1e-5)
+-K: cell birth rate (e.g. -K1)
+-L: cell death rate (e.g. -L0.001)
+-h: number of demographic periods followed by effective population size at the beginning and at the end of the period, 
+    and the duration of the period in generations. (e.g. -d1 100 200 30000) (e.g. -d2 100 100 40000 1000 2000 20000)
+-k: transforming branch length (e.g. -u1e-2)
+-q: healthy tip branch length (e.g. -q1e-6)
+-i: shape of the gamma distribution for rate variation among lineages (e.g. -i0.5)
+-N: number of tree rate switches followed by the rate multipliers  (e.g. -N2 10 0.2)
+-b: alphabet [0:binary 1:DNA] (e.g. -b0)
+-c: germline SNP rate (e.g. -c1e-5)
+-u: somatic mutation rate (e.g. -u1e-6)
+-d: deletion rate (e.g. -d1e-5)
+-H: CNLOH rate (e.g. -H1e-5)
+-j: fixed number of mutations (e.g. -j100)
+-S: trinucleotide genetic signatures (e.g. -S2 3 0.8 13 0.2)
+-m: alternative mutation model [0:ISMhap 1:Mk2 2:finiteDNA] [default mutation model is ISM diploid] (e.g. -m2)
+-p: proportion of alternative model sites (e.g. -p0.1)
+-w: alternative/default model relative mutation rate (e.g. -w1)
+-f: nucleotide base frequencies (e.g. -f0.4 0.3 0.2 0.1)
+-t: transition/transversion ratio (e.g. -t2)
+-a: shape of the gamma distribution for rate variation among sites (e.g. -a0.2)
+-r: mutation matrix ACGT x ACGT (e.g. -r0 1 2 3 1 0 4 5 2 4 0 1 3 5 1 0)
+-D: allelic dropout (e.g. -D0.1)
+-P: allelic dropout variation among cells (e.g. -P1)
+-Q: allelic dropout variation among sites (e.g. -Q1)
+-I: maternal allelic imbalance (e.g. -I0.5)
+-A: amplification error (e.g. -A0.1 0.01 0)
+-B: doublet rate per cell (e.g. -B0.1)
+-G: genotyping error [no read counts] (e.g. -G0.01)
+-C: sequencing coverage [read counts] (e.g. -C60)
+-V: sequencing coverage overdispersion (e.g. -V5)
+-R: ADO/deletion haploid coverage reduction (e.g. -R0.5)
+-E: sequencing error (e.g. -E0.001)
+-X: error matrix ACGT x ACGT (e.g. -X0 1 1 1 1 0 1 1 1 1 0 1 1 1 1 0)
+-1: print SNV genotypes to a file (e.g. -1)
+-2: print SNV haplotypes to a file (e.g. -2)
+-3: print full genotypes to a file (e.g. -3)
+-4: print full haplotypes to a file (e.g. -4)
+-5: print ancestral genotypes (e.g. -5)
+-6: print trees to a file (e.g. -6)
+-7: print times to a file (e.g. -7)
+-8: print read counts in CATG format (e.g. -8)
+-9: print read counts in PILEUP format (e.g. -9)
+-Y: print true SNV haplotypes to a file (e.g. -Y)
+-v: print replicates in individual folders (e.g. -v)
+-x: print consensus/IUPAC haplotypes (e.g. -x)
+-o: results folder name (e.g. -oresultsFolder)
+-T: user-tree file (e.g. -Tusertree)
+-U: user genome (e.g. -Uusergenome)
+-W: use tumor nomenclature for cells (e.g. -W)
+-y: noisy (e.g. -y1)
+      = 0: does not print anything
+      = 1:  + simulation summary
+      = 2:  + replicate information
+      = 3: + calculation status and event information
+-#: seed (e.g. -#37864287)
+-?: Print help
+
+Defaults: 
+-F: parameter file =  parameters
+-n: number of replicates =  1
+-s: sample size (# cells) =  50
+-l: number of sites =  95493
+-e: effective population size =  65096
+-g: exponential growth rate =  7.3e-04
+-K: cell birth rate =  1.0e+00
+-L: cell death rate =  0.0e+00
+-h: number of demographic periods = 0
+-k: transforming branch length ratio =  1.0e-02
+-q: healthy tip branch length ratio =  1.0e-02
+-i: shape of the gamma distribution for rate variation among lineages =  1.0000
+-b: alphabet [0:binary 1:DNA] =  1
+-c: germline SNP rate =  0.0e+00
+-u: mutation rate =  2.2e-06
+-d: deletion rate =  0.0e+00
+-H: CNLOH rate =  0.0e+00
+-j: fixed number of mutations =  0
+-S: number of trinucleotide genetic signature =  0
+-m: alternative mutation model =  2
+-p: proportion of alternative model sites =  1.0000
+-w: alternative/default model relative mutation rate =  1.0000
+-f: nucleotide base frequencies = f0.25 0.25 0.25 0.25
+-t: transition/transversion ratio =  0.5000
+-a: shape of the gamma distribution for rate variation among sites =  1.0000
+-r: mutation matrix ACGT x ACGT = 0.00 1.00 1.00 1.00  1.00 0.00 1.00 1.00 1.00 1.00 0.00 1.00 1.00 1.00 1.00 0.00
+-D: fixed allelic dropout (ADO) =  1.3e-01
+-P: ADO per cell mean, var  =  0.0e+00 1.0e-06
+-Q: ADO per site mean, var =  0.0e+00 1.0e-06
+-I: allelic imbalance =  5.0e-01 1.0e-06
+-A: amplification error: mean, var, 2-template model =  7.8e-02, 1.0e-07, 0
+-B: doublet rate per cell; mean, var =  0.0e+00, 1.0e-06
+-G: genotyping error: mean, var =  0.0e+00 1.0e-06
+-C: sequencing coverage =  100.00
+-V: sequencing coverage overdispersion =  5.0000
+-R: haploid coverage reduction =  5.0e-01
+-E: sequencing error =  2.9e-02
+-X: error matrix ACGT x ACGT = 0.00 1.00 1.00 1.00  1.00 0.00 1.00 1.00  1.00 1.00 0.00 1.00  1.00 1.00 1.00 0.00
+-1: print SNV genotypes to a file =  1
+-2: print SNV haplotypes to a file =  1
+-3: print full genotypes to a file =  1
+-4: print full haplotypes to a file =  1
+-5: print ancestral genotypes =  1
+-6: print trees to a file =  1
+-7: print times to a file =  0
+-8: print read counts in CATG format =  1
+-9: print read counts in PILEUP format =  0
+-Y: print true haplotypes to a file =  
+-v: print replicates in individual folders =  1
+-x: print consensus/IUPAC haplotypes =  1
+-T: user tree file name =  NA
+-U: user genome file name =  usergenome
+-o: results folder name =  data/2_ccoal/_pop65096_sites95493r1
+-W: use tumor nomenclature for cells =  0
+-y: noisy = 1
+-#: seed = 1702458690
+--------------------------------------------------------------------------------------------------------
+
+...now exiting to system...
+
+Warning in file(con, "r") :
+  cannot open file 'data/2_ccoal/_pop65096_sites95493r1/full_haplotypes_dir/full_hap.0001': No such file or directory
+Error in file(con, "r") : cannot open the connection
+Calls: readLines -> file
+Execution halted

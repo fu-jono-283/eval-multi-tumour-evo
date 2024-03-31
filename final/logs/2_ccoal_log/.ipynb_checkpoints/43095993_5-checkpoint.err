@@ -1,0 +1,29 @@
+
+The following have been reloaded with a version change:
+  1) GCC/11.3.0 => GCC/12.3.0                                        14) bzip2/1.0.8-GCCcore-11.3.0 => bzip2/1.0.8-GCCcore-12.3.0
+  2) GCCcore/11.3.0 => GCCcore/12.3.0                                15) cURL/7.83.1-GCCcore-11.3.0 => cURL/8.3.0-GCCcore-12.3.0
+  3) HDF5/1.12.2-gimpi-2022a => HDF5/1.14.3-gompi-2023a              16) freetype/2.11.1-GCCcore-11.3.0 => freetype/2.13.2-GCCcore-12.3.0
+  4) OpenSSL/1.1.1k-GCCcore-11.3.0 => OpenSSL/1.1                    17) libjpeg-turbo/2.1.3-GCCcore-11.3.0 => libjpeg-turbo/2.1.5.1-GCCcore-12.3.0
+  5) Python/3.10.5-gimkl-2022a => Python/3.11.6-foss-2023a           18) libpng/1.6.37-GCCcore-11.3.0 => libpng/1.6.40-GCCcore-12.3.0
+  6) SQLite/3.36.0-GCCcore-11.3.0 => SQLite/3.42.0-GCCcore-12.3.0    19) libreadline/8.1-GCCcore-11.3.0 => libreadline/8.2-GCCcore-12.3.0
+  7) Szip/2.1.1-GCCcore-11.3.0 => Szip/2.1.1-GCCcore-12.3.0          20) libxml2/2.9.10-GCCcore-11.3.0 => libxml2/2.11.4-GCCcore-12.3.0
+  8) Tcl/8.6.10-GCCcore-11.3.0 => Tcl/8.6.10-GCCcore-12.3.0          21) libxslt/1.1.34-GCCcore-11.3.0 => libxslt/1.1.38-GCCcore-12.3.0
+  9) Tk/8.6.10-GCCcore-11.3.0 => Tk/8.6.10-GCCcore-12.3.0            22) ncurses/6.2-GCCcore-11.3.0 => ncurses/6.4-GCCcore-12.3.0
+ 10) UCX/1.12.1-GCC-11.3.0 => UCX/1.14.1-GCCcore-12.3.0              23) netCDF/4.8.1-gimpi-2022a => netCDF/4.9.2-gompi-2023a
+ 11) XZ/5.2.5-GCCcore-11.3.0 => XZ/5.4.2-GCCcore-12.3.0              24) numactl/2.0.14-GCC-11.3.0 => numactl/2.0.16-GCCcore-12.3.0
+ 12) ZeroMQ/4.3.4-GCCcore-11.3.0 => ZeroMQ/4.3.5-GCCcore-12.3.0      25) zlib/1.2.11-GCCcore-11.3.0 => zlib/1.2.13-GCCcore-12.3.0
+ 13) binutils/2.38-GCCcore-11.3.0 => binutils/2.40-GCCcore-12.3.0
+
+______________________________________________________________________
+
+Cell coalescent simulation - CellCoal  version 1.3.1
+(c) 2016-2022 David Posada - dposada@uvigo.es
+______________________________________________________________________
+
+Mon Jan 22 11:24:22 2024
+Parameter file ["/home/jfu283/rstudio_tmp/RtmpYlJhp1/file3980d6341afeb4.txt"] arguments (some might not affect) =  -n1 -s54 -l64789 -e24271 -g4.6e-04 -K1.0e+00 -L0.0e+00 -h0 -k1.0e-02 -q1.0e-02 -i1.0000 -b1 -c0.0e+00 -u9.2e-06 -d0.0e+00 -H0.0e+00 -j0 -S0 -m2 -p1.0000 -w1.0000 -f0.25 0.25 0.25 0.25 -t0.5000 -a1.0000 -r0.00 2.10 0.30 5.60  2.10 0.00 1.50 7.80 0.30 1.50 0.00 1.40 5.60 7.80 1.40 0.00 -D4.2e-02 -P0.0e+00 1.0e-06 -Q0.0e+00 1.0e-06 -I5.0e-01 1.0e-06 -A5.5e-03 1.0e-07 0 -B0.0e+00 1.0e-06 -G0.0e+00 1.0e-06 -C100.00 -V5.0000 -R5.0e-01 -E3.5e-02 -X0.00 1.00 1.00 1.00 1.00 0.00 1.00 1.00 1.00 1.00 0.00 1.00 1.00 1.00 1.00 0.00 -1 -2 -3 -4 -5 -6 -8 -Y -v -x -odata/2_ccoal/_pop24271_sites64789r5 -Tdata/1_simphy/_pop24271_sites64789r5/g_trees5.trees -y1 -#1705875862Can't open "data/2_ccoal/_pop24271_sites64789r5/log"
+Warning in file(con, "r") :
+  cannot open file 'data/2_ccoal/_pop24271_sites64789r5/full_haplotypes_dir/full_hap.0001': No such file or directory
+Error in file(con, "r") : cannot open the connection
+Calls: readLines -> file
+Execution halted

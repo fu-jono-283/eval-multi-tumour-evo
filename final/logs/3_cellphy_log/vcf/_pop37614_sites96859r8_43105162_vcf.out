@@ -1,0 +1,120 @@
+
+The following have been reloaded with a version change:
+  1) GCC/11.3.0 => GCC/9.2.0
+  2) GCCcore/11.3.0 => GCCcore/9.2.0
+  3) SQLite/3.36.0-GCCcore-11.3.0 => SQLite/3.31.1-GCCcore-9.2.0
+  4) XZ/5.2.5-GCCcore-11.3.0 => XZ/5.2.4-GCCcore-9.2.0
+  5) binutils/2.38-GCCcore-11.3.0 => binutils/2.32-GCCcore-9.2.0
+  6) bzip2/1.0.8-GCCcore-11.3.0 => bzip2/1.0.8-GCCcore-9.2.0
+  7) freetype/2.11.1-GCCcore-11.3.0 => freetype/2.10.1-GCCcore-9.2.0
+  8) libjpeg-turbo/2.1.3-GCCcore-11.3.0 => libjpeg-turbo/2.0.2-GCCcore-9.2.0
+  9) libpng/1.6.37-GCCcore-11.3.0 => libpng/1.6.37-GCCcore-9.2.0
+ 10) libreadline/8.1-GCCcore-11.3.0 => libreadline/8.0-GCCcore-9.2.0
+ 11) libxml2/2.9.10-GCCcore-11.3.0 => libxml2/2.9.10-GCCcore-9.2.0
+ 12) ncurses/6.2-GCCcore-11.3.0 => ncurses/6.1-GCCcore-9.2.0
+ 13) zlib/1.2.11-GCCcore-11.3.0 => zlib/1.2.11-GCCcore-9.2.0
+
+
+The following have been reloaded with a version change:
+  1) GCCcore/9.2.0 => GCCcore/11.3.0
+  2) SQLite/3.31.1-GCCcore-9.2.0 => SQLite/3.36.0-GCCcore-11.3.0
+  3) XZ/5.2.4-GCCcore-9.2.0 => XZ/5.2.5-GCCcore-11.3.0
+  4) bzip2/1.0.8-GCCcore-9.2.0 => bzip2/1.0.8-GCCcore-11.3.0
+  5) freetype/2.10.1-GCCcore-9.2.0 => freetype/2.11.1-GCCcore-11.3.0
+  6) libjpeg-turbo/2.0.2-GCCcore-9.2.0 => libjpeg-turbo/2.1.3-GCCcore-11.3.0
+  7) libpng/1.6.37-GCCcore-9.2.0 => libpng/1.6.37-GCCcore-11.3.0
+  8) libreadline/8.0-GCCcore-9.2.0 => libreadline/8.1-GCCcore-11.3.0
+  9) ncurses/6.1-GCCcore-9.2.0 => ncurses/6.2-GCCcore-11.3.0
+ 10) zlib/1.2.11-GCCcore-9.2.0 => zlib/1.2.11-GCCcore-11.3.0
+
+
+VCFtools - 0.1.15
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop37614_sites96859r8/vcf_dir/vcf_modified
+	--recode-INFO-all
+	--out /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop37614_sites96859r8/vcf_dir/vcf_no_outgcell
+	--recode
+	--remove-indv outgcell
+
+Excluding individuals in 'exclude' list
+After filtering, kept 66 out of 67 Individuals
+Outputting VCF file...
+After filtering, kept 96824 out of a possible 96824 Sites
+Run Time = 47.00 seconds
+Deleted /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop37614_sites96859r8/vcf_dir/vcf_no_outgcell.recode.vcf
+Deleted /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop37614_sites96859r8/vcf_dir/vcf_modified
+CellPhy v0.9.2 - 08.07.2021 - https://github.com/amkozlov/cellphy
+Created by: Alexey Kozlov, Joao M Alves, Alexandros Stamatakis & David Posada
+Support: https://groups.google.com/forum/#!forum/raxml\n
+
+RAxML-NG v. 0.9.0git (CellPHY branch) released on 08.07.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 22-Jan-2024 19:24:54 as follows:
+
+/home/jfu283/bin/bin/raxml-ng-cellphy-linux --msa /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop37614_sites96859r8/vcf_dir/vcf_no_outgcell.recode_consensus.vcf.NEW_ER --model GT16+FO --seed 2 --threads 10 --force perf_threads --prefix /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop37614_sites96859r8/vcf --force model_lh_impr
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (10 threads), thread pinning: OFF
+
+WARNING: Running in FORCE mode: some safety checks are disabled!
+
+[00:00:00] Reading alignment from file: /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop37614_sites96859r8/vcf_dir/vcf_no_outgcell.recode_consensus.vcf.NEW_ER
+
+WARNING: Some low-confidence SNVs were converted to gaps to prevent underflow: 2467 (0.231629%)
+
+[00:00:50] Loaded alignment with 11 taxa and 96824 sites
+
+Alignment comprises 1 partitions and 96824 sites
+
+Partition 0: noname
+Model: GT16+FO
+Alignment sites: 96824
+Gaps: 0.23 %
+Invariant sites: 0.00 %
+
+
+[00:00:50] Generating 10 random starting tree(s) with 11 taxa
+[00:00:50] Generating 10 parsimony starting tree(s) with 11 taxa
+[00:00:58] Data distribution: max. partitions/sites/weight per thread: 1 / 9683 / 154928
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:58 -66845661.635373] Initial branch length optimization
+[00:01:20 -66485528.853625] Model parameter optimization (eps = 10.000000)
+[00:41:00 -66233285.852666] AUTODETECT spr round 1 (radius: 5)
+[00:41:54 -66101988.994809] AUTODETECT spr round 2 (radius: 10)
+[00:42:06 -66101988.824748] SPR radius for FAST iterations: 10 (autodetect)
+[00:42:06 -66101988.824748] Model parameter optimization (eps = 3.000000)
+[00:56:19 -66099902.318294] FAST spr round 1 (radius: 10)
+[01:02:14 -66099902.288038] Model parameter optimization (eps = 1.000000)
+[01:03:35 -66099900.024464] SLOW spr round 1 (radius: 5)
+[01:18:04 -66099900.017591] SLOW spr round 2 (radius: 10)
+[01:22:49 -66099900.017017] Model parameter optimization (eps = 0.100000)
+
+[01:25:06] ML tree search #1, logLikelihood: -66099899.039003
+
+[01:25:07 -66721040.915163] Initial branch length optimization
+[01:25:34 -66431050.018907] Model parameter optimization (eps = 10.000000)
+[01:30:37 -66338801.188425] AUTODETECT spr round 1 (radius: 5)
+[01:31:28 -66227237.443246] AUTODETECT spr round 2 (radius: 10)
+[01:31:34 -66227237.428410] SPR radius for FAST iterations: 5 (autodetect)
+[01:31:34 -66227237.428410] Model parameter optimization (eps = 3.000000)
+[01:33:56 -66226913.068953] FAST spr round 1 (radius: 5)
+slurmstepd: error: *** JOB 43105162 ON wbn013 CANCELLED AT 2024-01-22T08:03:04 ***

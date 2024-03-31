@@ -1,0 +1,104 @@
+CellPhy v0.9.2 - 08.07.2021 - https://github.com/amkozlov/cellphy
+Created by: Alexey Kozlov, Joao M Alves, Alexandros Stamatakis & David Posada
+Support: https://groups.google.com/forum/#!forum/raxml\n
+
+RAxML-NG v. 0.9.0git (CellPHY branch) released on 08.07.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 18-Dec-2023 21:54:58 as follows:
+
+/home/jfu283/bin/bin/raxml-ng-cellphy-linux --msa /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop14695_sites92966r5/full_haplotypes_dir/full_hap.0001 --model GT16+FO+E --seed 2 --threads 12 --force perf_threads --prefix /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop14695_sites92966r5/single
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (12 threads), thread pinning: OFF
+
+WARNING: Running in FORCE mode: some safety checks are disabled!
+
+[00:00:00] Reading alignment from file: /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop14695_sites92966r5/full_haplotypes_dir/full_hap.0001
+[00:00:00] Loaded alignment with 42 taxa and 92966 sites
+
+Alignment comprises 1 partitions and 43494 patterns
+
+Partition 0: noname
+Model: GT16+FO+ERR_P20
+Alignment sites / patterns: 92966 / 43494
+Gaps: 0.01 %
+Invariant sites: 19.57 %
+
+
+NOTE: Binary MSA file created: /home/jfu283/nobackup_uoa03626/nobackup_fu/final_4_fun/sbr_full/data/2_ccoal/_pop14695_sites92966r5/single.raxml.rba
+
+[00:00:00] Generating 10 random starting tree(s) with 42 taxa
+[00:00:00] Generating 10 parsimony starting tree(s) with 42 taxa
+[00:00:01] Data distribution: max. partitions/sites/weight per thread: 1 / 3625 / 58000
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:01 -3138494.323234] Initial branch length optimization
+[00:00:01 -2785767.021480] Model parameter optimization (eps = 10.000000)
+[00:01:46 -2123635.737629] AUTODETECT spr round 1 (radius: 5)
+[00:01:49 -1304204.457656] AUTODETECT spr round 2 (radius: 10)
+[00:01:53 -1243797.435959] AUTODETECT spr round 3 (radius: 15)
+[00:01:54 -1243797.435785] SPR radius for FAST iterations: 10 (autodetect)
+[00:01:54 -1243797.435785] Model parameter optimization (eps = 3.000000)
+[00:02:52 -1131624.273153] FAST spr round 1 (radius: 10)
+[00:02:58 -1088852.588335] FAST spr round 2 (radius: 10)
+[00:03:01 -1088852.588335] Model parameter optimization (eps = 1.000000)
+[00:03:17 -1088331.420680] SLOW spr round 1 (radius: 5)
+[00:03:27 -1088331.419550] SLOW spr round 2 (radius: 10)
+[00:03:36 -1088331.419550] SLOW spr round 3 (radius: 15)
+[00:03:40 -1088331.419550] SLOW spr round 4 (radius: 20)
+[00:03:41 -1088331.419550] SLOW spr round 5 (radius: 25)
+[00:03:41 -1088331.419550] Model parameter optimization (eps = 0.100000)
+
+[00:03:54] ML tree search #1, logLikelihood: -1088330.446294
+
+[00:03:54 -3060308.886586] Initial branch length optimization
+[00:03:54 -2767552.479308] Model parameter optimization (eps = 10.000000)
+[00:05:25 -2128115.195214] AUTODETECT spr round 1 (radius: 5)
+[00:05:28 -1376290.610154] AUTODETECT spr round 2 (radius: 10)
+[00:05:31 -1293035.450662] AUTODETECT spr round 3 (radius: 15)
+[00:05:32 -1293027.823386] AUTODETECT spr round 4 (radius: 20)
+[00:05:32 -1293027.772634] SPR radius for FAST iterations: 15 (autodetect)
+[00:05:32 -1293027.772634] Model parameter optimization (eps = 3.000000)
+[00:06:25 -1180189.534667] FAST spr round 1 (radius: 15)
+[00:06:31 -1091584.140225] FAST spr round 2 (radius: 15)
+[00:06:35 -1089870.179722] FAST spr round 3 (radius: 15)
+[00:06:39 -1089870.179720] Model parameter optimization (eps = 1.000000)
+[00:07:19 -1088331.430151] SLOW spr round 1 (radius: 5)
+[00:07:30 -1088331.429071] SLOW spr round 2 (radius: 10)
+[00:07:39 -1088331.429071] SLOW spr round 3 (radius: 15)
+[00:07:44 -1088331.429071] SLOW spr round 4 (radius: 20)
+[00:07:44 -1088331.429071] SLOW spr round 5 (radius: 25)
+[00:07:45 -1088331.429071] Model parameter optimization (eps = 0.100000)
+
+[00:07:57] ML tree search #2, logLikelihood: -1088330.447239
+
+[00:07:57 -3049003.899209] Initial branch length optimization
+[00:07:57 -2747919.657007] Model parameter optimization (eps = 10.000000)
+[00:09:16 -2132892.114887] AUTODETECT spr round 1 (radius: 5)
+[00:09:18 -1400006.463010] AUTODETECT spr round 2 (radius: 10)
+[00:09:22 -1252384.668005] AUTODETECT spr round 3 (radius: 15)
+[00:09:24 -1252384.536244] AUTODETECT spr round 4 (radius: 20)
+[00:09:24 -1252384.535838] SPR radius for FAST iterations: 15 (autodetect)
+[00:09:24 -1252384.535838] Model parameter optimization (eps = 3.000000)
+[00:10:20 -1153378.069503] FAST spr round 1 (radius: 15)
+[00:10:27 -1095322.066585] FAST spr round 2 (radius: 15)
+[00:10:31 -1090218.178054] FAST spr round 3 (radius: 15)
+[00:10:35 -1089954.875522] FAST spr round 4 (radius: 15)
+[00:10:39 -1089954.875521] Model parameter optimization (eps = 1.000000)
+slurmstepd: error: *** JOB 41978173 ON wmc019 CANCELLED AT 2023-12-18T09:05:45 ***
