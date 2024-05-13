@@ -18,8 +18,8 @@ export simphy_folder="$PWD/data/1_simphy"
 start_time=$(date +%s)
 
 process_single_folder() {
-    local iteration_identifier="_pop73669_sites60413r8"
-    local iteration_folder="$single_ccoal_output_folder/_pop73669_sites60413r8"
+    local iteration_identifier="_pop69840_sites27694r8"
+    local iteration_folder="$single_ccoal_output_folder/_pop69840_sites27694r8"
     local haplotype_file="$iteration_folder/full_haplotypes_dir/full_hap.0001"
     local single_output_prefix="$iteration_folder/single" 
     
@@ -27,9 +27,9 @@ process_single_folder() {
 }
 
 execute_r_script() {
-    local iteration_identifier="_pop73669_sites60413r8"
-    local iteration_folder="$single_ccoal_output_folder/_pop73669_sites60413r8"
-    local gene_tree_file=$(find "$simphy_folder/_pop73669_sites60413r8" -type f -name 'g_trees*.trees' -print -quit)
+    local iteration_identifier="_pop69840_sites27694r8"
+    local iteration_folder="$single_ccoal_output_folder/_pop69840_sites27694r8"
+    local gene_tree_file=$(find "$simphy_folder/_pop69840_sites27694r8" -type f -name 'g_trees*.trees' -print -quit)
     local single_besttree_file="$iteration_folder/single.raxml.bestTree"
     local population_size=$(echo "$iteration_folder" | grep -oE '_pop([0-9]+)_sites[0-9]+r[0-9]+' | grep -oE '[0-9]+' | head -1)
     local replicate=$(echo "$iteration_folder" | grep -oE 'r[0-9]+$')  
@@ -46,7 +46,7 @@ export iteration_identifier
 log_file="logs/3_cellphy_log/single/master_log.txt"
 echo "Job started at $(date)" >> "$log_file"
 
-mv "logs/3_cellphy_log/single/${SLURM_JOB_ID}_single.out" "logs/3_cellphy_log/single/_pop73669_sites60413r8_${SLURM_JOB_ID}_single.out"
+mv "logs/3_cellphy_log/single/${SLURM_JOB_ID}_single.out" "logs/3_cellphy_log/single/_pop69840_sites27694r8_${SLURM_JOB_ID}_single.out"
 
 process_single_folder "iteration_identifier"
 

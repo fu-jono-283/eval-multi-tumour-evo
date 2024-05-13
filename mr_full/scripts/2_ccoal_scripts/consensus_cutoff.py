@@ -1,4 +1,4 @@
-    # This script is used to produce a consensus sequence fasta file from the CellCoal haplotype file. The cutoff value can be adjusted. 
+# This script is used to produce a consensus sequence fasta file from the CellCoal haplotype file. The cutoff value can be adjusted. 
 
     import sys
     import os
@@ -48,9 +48,9 @@
             col = col.upper()
             base_count = {b: col.count(b) for b in bases}
             genotypes = sorted(base_count.items(), key=lambda x: -x[1])
-            # genotypes = [b for b in genotypes if b[1] > 0]
+            # Genotypes = [b for b in genotypes if b[1] > 0]
             genotypes = [b for b in genotypes if b[1] >= len(col) * cutoff]
-            # genotypes = [e for e in genotypes if not (genotypes[0][1] !=  e[1] and e[1] <= 1)]
+            # Genotypes = [e for e in genotypes if not (genotypes[0][1] !=  e[1] and e[1] <= 1)]
             if len(genotypes) == 0:
                 con_seq += 'N'
             else:

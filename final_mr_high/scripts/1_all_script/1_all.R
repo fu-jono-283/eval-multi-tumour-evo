@@ -1,10 +1,11 @@
 library(lhs)
 library(dplyr)
 
+# Recording duration of simulation 
 start_time <- Sys.time()
 options(warn = 1)
 
-# Defining parameters
+# Defining parameters of LHS dataframe
 params <- data.frame(
   no_of_taxa = c(6, 12),
   individuals_per_taxa = c(4, 8),
@@ -18,7 +19,7 @@ params <- data.frame(
   sequencing_errors = c(0, 0.05)
 )
 
-# Mapping the names in R to the parameters for SIMPHY
+# Mapping the names in R to the parameters for SIMPHY software
 param_mapping_simphy <- list(
   "no_of_taxa" = "-sl f:%d",
   "individuals_per_taxa" = "-si f:%d",
@@ -27,7 +28,7 @@ param_mapping_simphy <- list(
   "tree_wide_sub_rate" = "-su f:%f"
 )
 
-# I'm doing the same here for CellCoal
+# Doing the same here for CellCoal software
 param_mapping_cellcoal <- list(
   "no_of_sites" = "l%d",
   "exponential_growth_rate" = "g%.4e",
@@ -37,6 +38,7 @@ param_mapping_cellcoal <- list(
   "no_of_cells" = "s%d"
 )
 
+# Function that ensures that LHS is being generated correctly
 checkLatinHypercube <- function(X) {
   if (any(apply(X, 2, min) <= 0))
     return(FALSE)
@@ -44,53 +46,54 @@ checkLatinHypercube <- function(X) {
     return(FALSE)
   if (any(is.na(X)))
     return(FALSE)
-  # check that the matrix is a Latin hypercube
   g <- function(Y) {
-    # check that this column contains all the cells
     breakpoints <- seq(0, 1, length = length(Y) + 1)
     h <- hist(Y, plot = FALSE, breaks = breakpoints)
     all(h$counts == 1)
   }
-  # check all the columns
   return(all(apply(X, 2, g)))
 }
 
 # Latin Hypercube Sampling design------------------------------------------------------------------------
-n <- 2
-replicates <- 1
+n <- 2  # Generating 2 samples
+replicates <- 1 # Not performing augment LHS - just one full simulation of dataframe here
 
+# Forming dataframe
 for (i in seq_along(replicates)) {
   initial_lhs <- randomLHS(n, ncol(params))
 
   total_rows <- nrow(initial_lhs) * replicates
   replicated_lhs <- do.call(rbind, replicate(replicates, as.data.frame(initial_lhs), simplify = FALSE))
     
-  # Scaling    
+# Scaling of LHS values from 0-1 to those of actual parameters   
   scaled_lhs <- t(apply(replicated_lhs, 1, function(x) {
     param_range <- unlist(params)
     scaled_vals <- x * (param_range[seq(2, length(param_range), 2)] - param_range[seq(1, length(param_range), 2)]) + param_range[seq(1, length(param_range), 2)]
     scaled_vals[c(1, 2, 3, 6)] <- round(scaled_vals[c(1, 2, 3, 6)])
     scaled_vals
   }))
-    
+
+# Implementing the LHS check function    
   if (!checkLatinHypercube(initial_lhs)) {
     stop("Generated matrix does not satisfy LHS properties")
   } else {
     cat("SUCCESS: Generated matrix satisfies LHS properties\n")
-  }    
-    
+  } 
+
+# Naming columns of dataframe, adding in replicate labels        
   colnames(scaled_lhs) <- colnames(initial_lhs)
   param_names <- colnames(params)
   colnames(scaled_lhs) <- param_names
   replicate_labels <- rep(paste0("r", 1:replicates), each = nrow(initial_lhs))
 
+# Finalizing as combined_df, which includes the concept of replicates within the initial df.     
   combined_df <- data.frame(
     scaled_lhs,
     Replicate = as.character(replicate_labels[seq_len(nrow(scaled_lhs))]),
     stringsAsFactors = FALSE
   )
 
-  # Adding score columns 
+# Adding score columns 
   scSEQ_score <- rep(-1, nrow(combined_df))
   hapconsensus_score <- rep(-1, nrow(combined_df))
   vcfpseudobulk_score <- rep(-1, nrow(combined_df))
@@ -100,11 +103,13 @@ for (i in seq_along(replicates)) {
   combined_df$hapconsensus_score <- hapconsensus_score
   combined_df$vcfpseudobulk_score <- vcfpseudobulk_score
 #  combined_df$allcount_score <- allcount_score
-    
+
+# Writing dataframe into a CSV file - based on number of samples
   csv_filename <- sprintf("dataframes/part1_template/combined_data.csv")
   write.csv(combined_df, csv_filename, row.names = FALSE)
 }
 
+# Specifying where input/output of SimPhy data will go
 simphy_folder <- "data/1_simphy"
 
 param_file <- "dataframes/part1_template/combined_data.csv"
@@ -113,14 +118,19 @@ param_data <- read.csv(param_file)
 # Looping through simphy
 for (row in 1:nrow(param_data)) {
   p <- param_data[row, ]
+# The iteration identifier - a concept used throughout simulations to identify each iteration - based initially
+# on the EPS, NOS and later based also on the replicate number (r1-r8)
   iteration_identifier <- paste("_pop", p$effective_population_size, "_sites", p$no_of_sites, sep = "")
+# The number of cells is a parameter argument present in CellCoal - which must be calculated from the SimPhy values
+# simulated (individuals per taxa, and number of taxa).
   no_of_cells <- as.integer(p$individuals_per_taxa) * as.integer(p$no_of_taxa)
   param_mapping_cellcoal[["no_of_cells"]] <- sprintf("s%d", no_of_cells)
 
   simphy_folder_iteration <- file.path(simphy_folder, iteration_identifier)
   simphy_folder_iteration <- simphy_folder_iteration[!grepl("\\.ipynb_checkpoints", simphy_folder_iteration)]
-
-  config_file <- readLines("scripts/parameter_files/premade_simphy.conf", warn = FALSE)
+# Reading the OG configuration file of SimPhy, contains the execution script made by SimPhy creators, in which we
+# susbtitute our LHS values
+  config_file <- readLines("scripts/configuration_folder/premade_simphy.conf", warn = FALSE)
   config_file <- gsub("-sl f:%d", sprintf("-sl f:%d", p$no_of_taxa), config_file)
   config_file <- gsub("-si f:%d", sprintf("-si f:%d", p$individuals_per_taxa), config_file)
   config_file <- gsub("-sp f:%d", sprintf("-sp f:%d", p$effective_population_size), config_file)
@@ -136,8 +146,11 @@ for (row in 1:nrow(param_data)) {
   cmd_simphy <- paste("simphy -i", updated_config_file)
   system(cmd_simphy)
   file.remove(updated_config_file)
-
-  for (i in 1:8) {
+    
+# Note that in SimPhy we generate 8 gene trees per sample... Now we specify the iteration identifier to consider each replicate 
+# as an individual iteration. In these loops, we rearrange our folders/files so that each replicate has its own output folder, 
+# and each output folder contains the gene tree, species tree etc. 
+  for (i in 1:2) {
     tree_identifier <- paste("r", i, sep = "")
     source_tree_file <- file.path(simphy_folder_iteration, "1", paste0("g_trees", i, ".trees"))
     destination_tree_folder <- file.path(simphy_folder_iteration, paste0(iteration_identifier, tree_identifier))
@@ -163,7 +176,7 @@ for (row in 1:nrow(param_data)) {
     file.copy(source_command_file, destination_command_file, overwrite = TRUE)
   }
 
-  for (i in 1:8) {
+  for (i in 1:2) {
     tree_identifier <- paste("r", i, sep = "")
     destination_tree_folder <- file.path(simphy_folder_iteration, paste0(iteration_identifier, tree_identifier))
     destination_tree_folder_new <- file.path(simphy_folder, paste0(iteration_identifier, tree_identifier))
@@ -175,6 +188,8 @@ for (row in 1:nrow(param_data)) {
   }
 }
 
+# We update the dataframe so that it considers that there are now 8 replicates - so the number of rows equates to 
+# no. of samples * 8. 
 csv_filenames <- c("dataframes/part1_template/combined_data.csv")
 
 for (csv_filename in csv_filenames) {
@@ -183,7 +198,7 @@ for (csv_filename in csv_filenames) {
 
   for (replicate_label in unique(df$Replicate)) {
     replicate_df <- df[df$Replicate == replicate_label, ]
-    replicated_rows <- lapply(1:8, function(i) {
+    replicated_rows <- lapply(1:2, function(i) {
       replicate_df$Replicate <- paste0("r", i)
       return(replicate_df)
     })
@@ -196,13 +211,14 @@ for (csv_filename in csv_filenames) {
   cat(paste("Updated", csv_filename, "\n"))
 }
 
+# Recording simulation time
 end_time <- Sys.time()
 
 total_runtime <- end_time - start_time
 print(paste("Total runtime:", total_runtime))
 
 # CellCoal------------------------------------------------------------------------
-total_jobs <- 16 # adjust based on the amount of required jobs 
+total_jobs <- 4 # adjust based on the amount of required jobs 
 max_jobs_per_submission <- 999
 num_submissions <- ceiling(total_jobs / max_jobs_per_submission)
 
@@ -264,7 +280,7 @@ while (sum(sapply(subdirectories, function(subdir) {
 cat("Contents of the directory:", list.files(target_path), "\n")
   
   file.exists(target_file)
-})) != 16) {   #adjust!!!
+})) != 4) {   #adjust!!!
   counts <- sapply(subdirectories, function(subdir) {
     target_path <- file.path(subdir, "full_haplotypes_dir")
     target_file <- file.path(target_path, "full_hap.0001_consensus.fasta")
@@ -280,7 +296,7 @@ cat("Contents of the directory:", list.files(target_path), "\n")
 
 # CellPhy Haplotype Consensus------------------------------------------------------------------------
 check_condition <- function(bestTree_files) {
-  return(length(bestTree_files) == 16) # adjust based on the amount of expected reconstructed trees (same as the number of jobs)
+  return(length(bestTree_files) == 4) # adjust based on the amount of expected reconstructed trees (same as the number of jobs)
 }
 
 script_folder <- "scripts/3_cellphy_scripts/hap_consensus"
@@ -307,7 +323,7 @@ while (TRUE) {
 
 # CellPhy VCF Pseodobulk------------------------------------------------------------------------
 check_condition <- function(bestTree_files) {
-  return(length(bestTree_files) == 16) # adjust
+  return(length(bestTree_files) == 4) # adjust
 }
 
 script_folder <- "scripts/3_cellphy_scripts/vcf_consensus"
@@ -320,21 +336,21 @@ while (TRUE) {
     system(paste("Rscript", shQuote(script_file)))
   }
 
-  files_vcf <- list.files("data/2_ccoal", pattern = "^vcf\\.raxml\\.bestTree$", full.names = TRUE, recursive = TRUE)
+  files <- list.files("data/2_ccoal", pattern = "^vcf\\.raxml\\.bestTree$", full.names = TRUE, recursive = TRUE)
 
-  cat("List of best tree files:", files_vcf, "\n")
+  cat("List of best tree files:", files, "\n")
 
   condition_met <- check_condition(files)
   if (condition_met) {
     cat("All trees have been produced. Exiting the loop.\n")
     break
   }
-  Sys.sleep(2000)
+  Sys.sleep(150)
 }
 
 # CellPhy scSEQ------------------------------------------------------------------------
 check_condition <- function(bestTree_files) {
-  return(length(bestTree_files) == 16) # adjust 
+  return(length(bestTree_files) == 4) # adjust 
 }
 
 script_folder <- "scripts/3_cellphy_scripts/single_cseq"
@@ -347,9 +363,9 @@ while (TRUE) {
     system(paste("Rscript", shQuote(script_file)))
   }
 
-  files_scseq <- list.files("data/2_ccoal", pattern = "^single\\.raxml\\.bestTree$", full.names = TRUE, recursive = TRUE)
+  files <- list.files("data/2_ccoal", pattern = "^single\\.raxml\\.bestTree$", full.names = TRUE, recursive = TRUE)
 
-  cat("List of best tree files:", files_scseq, "\n")
+  cat("List of best tree files:", files, "\n")
 
   condition_met <- check_condition(files)
   if (condition_met) {

@@ -17,7 +17,7 @@ params <- data.frame(
   sequencing_errors = c(0, 0.05)
 )
 
-# Mapping the names in R to the parameters for SIMPHY
+# Mapping the names in R to the parameters for SIMPHY software
 param_mapping_simphy <- list(
     "no_of_taxa" = "-sl f:%d",
     "individuals_per_taxa" = "-si f:%d",
@@ -26,7 +26,7 @@ param_mapping_simphy <- list(
     "tree_wide_sub_rate" = "-su f:%f"
 )
 
-# I'm doing the same here for CellCoal
+# Doing the same here for CellCoal software
 param_mapping_cellcoal <- list(
     "no_of_sites" = "l%d",
     "exponential_growth_rate" = "g%.4e",
@@ -40,7 +40,7 @@ param_mapping_cellcoal <- list(
 param_file_cellcoal <- readLines("scripts/parameter_files/premade_ccoal.param", warn = FALSE)
 
 # Change the combined_data_[ ].csv---------------------------------
-combined_df <- read.csv("dataframes/part1_template/combined_data_200.csv", header = TRUE)
+combined_df <- read.csv("dataframes/part1_template/combined_data_200.csv", header = TRUE) # Adjust
 array_job_index <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
 p <- combined_df[array_job_index, ]
 
@@ -54,7 +54,7 @@ p <- combined_df[array_job_index, ]
                 no_of_cells <- p$no_of_cell
                   Replicate <- p$Replicate
 
-# Where processed iteration folders of CellCoal will go 
+# We specify where output folders of CellCoal will go 
 single_ccoal_output_folder <- "data/2_ccoal"
 iteration_identifier <- paste("_pop", effective_population_size, "_sites", no_of_sites, Replicate, sep = "")
 
@@ -88,7 +88,7 @@ temp_param_file_cellcoal <- tempfile(fileext = ".txt")
     
   cat("Cellcoal iteration folder processing finished.\n")   
     
-# REMOVE THE OUTGCELL---------------------------------------------------------
+# Remove the outgroup cell---------------------------------------------------------
 update_phylip_file <- function(file_path) {
     content <- readLines(file_path)
     outgcell_line <- grep("outgcell", content)
@@ -110,12 +110,13 @@ full_hap_file <- file.path(single_ccoal_output_folder, iteration_identifier, "fu
 
 cat("Outgcell removed.\n")
     
-# BUILDING THE CONSENSUS SEQUENCE----------------------------------------------------
+# Building the consensus sequence ----------------------------------------------------
 cmd_python <- sprintf("python %s %s", "scripts/2_ccoal_scripts/consensus_cutoff.py", full_hap_file)
 system(cmd_python)
 cat("Consensus sequence file finished.\n")    
 }
 
+# Recording duration of simulation
 end_time <- Sys.time()
 total_runtime <- end_time - start_time
 print(paste("Total runtime:", total_runtime))

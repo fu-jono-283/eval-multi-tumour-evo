@@ -1,5 +1,3 @@
-#Have to set arrays no more than 999 files at a time 
-
 #!/bin/bash -e
 #SBATCH --job-name=cellcoal_array
 #SBATCH --partition=milan

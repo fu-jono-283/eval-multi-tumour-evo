@@ -54,7 +54,7 @@ p <- combined_df[array_job_index, ]
                 no_of_cells <- p$no_of_cell
                   Replicate <- p$Replicate
 
-# Where processed iteration folders of CellCoal will go 
+# We specify where output folders of CellCoal will go 
 single_ccoal_output_folder <- "data/2_ccoal"
 iteration_identifier <- paste("_pop", effective_population_size, "_sites", no_of_sites, Replicate, sep = "")
 

@@ -16,27 +16,27 @@ module load Python/3.10.5-gimkl-2022a
 start_time=$(date +%s)
 
 modify_zzz() {
-  local initial_vcf="$single_ccoal_output_folder/_pop73669_sites60413r8/vcf_dir/vcf.0001"
-  local modified_vcf="$single_ccoal_output_folder/_pop73669_sites60413r8/vcf_dir/vcf_modified"
+  local initial_vcf="$single_ccoal_output_folder/_pop23013_sites55238r2/vcf_dir/vcf.0001"
+  local modified_vcf="$single_ccoal_output_folder/_pop23013_sites55238r2/vcf_dir/vcf_modified"
   sed 's/^##fileformat=VCFv4.3/##fileformat=VCFv4.2/' $initial_vcf > $modified_vcf
 }
 
 remove_outgcell() {
-  local modified_vcf="$single_ccoal_output_folder/_pop73669_sites60413r8/vcf_dir/vcf_modified"
-  local output_vcf="$single_ccoal_output_folder/_pop73669_sites60413r8/vcf_dir/vcf_no_outgcell"
+  local modified_vcf="$single_ccoal_output_folder/_pop23013_sites55238r2/vcf_dir/vcf_modified"
+  local output_vcf="$single_ccoal_output_folder/_pop23013_sites55238r2/vcf_dir/vcf_no_outgcell"
   vcftools --vcf $modified_vcf --remove-indv outgcell --recode --recode-INFO-all --out $output_vcf
 }
 
 
 process_vcf_consensus() {
-  local vcf_no_outgcell="$single_ccoal_output_folder/_pop73669_sites60413r8/vcf_dir/vcf_no_outgcell.recode.vcf"
+  local vcf_no_outgcell="$single_ccoal_output_folder/_pop23013_sites55238r2/vcf_dir/vcf_no_outgcell.recode.vcf"
   cmd_python="python scripts/3_cellphy_scripts/vcf_consensus/combine_vcf_sample_weighted_PL_G10.py $vcf_no_outgcell"
   eval "$cmd_python"
 }
 
 cleanup_files() {
-  local vcf_no_outgcell="$single_ccoal_output_folder/_pop73669_sites60413r8/vcf_dir/vcf_no_outgcell.recode.vcf"
-  local vcf_modified="$single_ccoal_output_folder/_pop73669_sites60413r8/vcf_dir/vcf_modified"
+  local vcf_no_outgcell="$single_ccoal_output_folder/_pop23013_sites55238r2/vcf_dir/vcf_no_outgcell.recode.vcf"
+  local vcf_modified="$single_ccoal_output_folder/_pop23013_sites55238r2/vcf_dir/vcf_modified"
   
   if [ -f "$vcf_no_outgcell" ]; then
     rm -f "$vcf_no_outgcell"
@@ -50,7 +50,7 @@ cleanup_files() {
 }
 
 process_vcf_folder() {
-local iteration_identifier="_pop73669_sites60413r8"
+local iteration_identifier="_pop23013_sites55238r2"
 local iteration_folder="$single_ccoal_output_folder/${iteration_identifier}"
 local no_outgcell_consensus_file="$iteration_folder/vcf_dir/vcf_no_outgcell.recode_consensus.vcf.NEW_ER"
 local vcf_output_prefix="$iteration_folder/vcf"
@@ -59,7 +59,7 @@ cellphy.sh RAXML --msa "$no_outgcell_consensus_file" --model GT16+FO --seed 2 --
 }
 
 execute_r_script() {
-local iteration_identifier="_pop73669_sites60413r8"
+local iteration_identifier="_pop23013_sites55238r2"
 local iteration_folder="$single_ccoal_output_folder/${iteration_identifier}"
 local species_tree_file="$simphy_folder/${iteration_identifier}/s_tree.trees"
 local vcf_besttree_file="$iteration_folder/vcf.raxml.bestTree"
@@ -75,7 +75,7 @@ export population_size
 export replicate
 export iteration_identifier
 
-mv "logs/3_cellphy_log/vcf/${SLURM_JOB_ID}_vcf.out" "logs/3_cellphy_log/vcf/_pop73669_sites60413r8_${SLURM_JOB_ID}_vcf.out"
+mv "logs/3_cellphy_log/vcf/${SLURM_JOB_ID}_vcf.out" "logs/3_cellphy_log/vcf/_pop23013_sites55238r2_${SLURM_JOB_ID}_vcf.out"
 
 modify_zzz 
 remove_outgcell 

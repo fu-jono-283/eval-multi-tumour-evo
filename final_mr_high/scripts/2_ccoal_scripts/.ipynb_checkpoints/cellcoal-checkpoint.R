@@ -37,7 +37,7 @@ param_mapping_cellcoal <- list(
 )
 
 # CELLCOAL---------------------------------------------------------
-param_file_cellcoal <- readLines("scripts/parameter_files/premade_ccoal.param", warn = FALSE)
+param_file_cellcoal <- readLines("scripts/configuration_folder/premade_ccoal.param", warn = FALSE)
 
 # Change the combined_data_[ ].csv---------------------------------
 combined_df <- read.csv("dataframes/part1_template/combined_data.csv", header = TRUE)
