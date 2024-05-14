@@ -16,4 +16,4 @@ To execute the simulation for part 1, load R and enter: Rscript scripts/1_all_sc
 
 To execute the simulation for part 2... 
 
-Please refer to the [Wiki](wiki/Overview) for an overview of the project. 
+Please refer to the ([Wiki](https://github.com/fu-jono-283/eval-multi-tumour-evo/wiki/Overview)) for an overview of the project. 
