@@ -12,8 +12,6 @@ Adjustments of parameter values can be made in scripts/configuration_folder/ - 1
 
 Adjustments of number of samples simulated (number of iteratations and trees must also be changed accordingly) can be made in 1_all_script/1_all.R
 
-To execute the simulation for part 1, load R and enter: Rscript scripts/1_all_script/1_all.R. 
-
-To execute the simulation for part 2... 
+To execute the simulation for part 1, load R and enter: Rscript scripts/1_all_script/1_all.R.
 
 Please refer to the [Wiki](https://github.com/fu-jono-283/eval-multi-tumour-evo/wiki/Overview) for an overview of the project. 
